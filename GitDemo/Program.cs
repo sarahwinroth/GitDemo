@@ -32,6 +32,7 @@ namespace GitDemo
             }
             Console.WriteLine(arrOfNum.Contains(3));*/
 
+            /*
             //Övning 2
             //Ett sätt
             int[] firstOne = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -45,6 +46,37 @@ namespace GitDemo
             //Ett annat sätt
             Console.WriteLine(string.Join(',', firstOne));
             Console.WriteLine(string.Join(',', firstOne.Reverse()));
+            */
+
+            string[] stringArr = new string[]
+            {"Jan", 
+                "Feb", 
+                "Mar", 
+                "Apr", 
+                "Maj", 
+                "Jun", 
+                "Jul", 
+                "Agu", 
+                "Sep", 
+                "Okt", 
+                "Nov", 
+                "Dec"
+            };
+
+            string num;
+            int choice;
+
+            do
+            {
+                Console.WriteLine("Select a number from 1-12");
+                num = Console.ReadLine();
+                choice = Convert.ToInt32(num);
+                if(choice < 12)
+                {
+                    Console.WriteLine(stringArr[choice - 1]);
+                }
+
+            } while (choice <= 12);
 
 
         }
