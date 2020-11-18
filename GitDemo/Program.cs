@@ -7,7 +7,7 @@ namespace GitDemo
     {
         static void Main(string[] args)
         {
-
+            /*
             int[] arrOfNum = new int[5];
             arrOfNum[0] = 13;
             arrOfNum[1] = 22;
@@ -30,7 +30,22 @@ namespace GitDemo
                     Console.WriteLine("Not this time");
                 }
             }
-            Console.WriteLine(arrOfNum.Contains(3));
+            Console.WriteLine(arrOfNum.Contains(3));*/
+
+            //Övning 2
+            //Ett sätt
+            int[] firstOne = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int[] secondOne = new int[10] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+
+            Console.WriteLine(string.Join(',', firstOne));
+            Console.WriteLine(string.Join(',', secondOne));
+
+            Console.WriteLine("-----------------------------");
+
+            //Ett annat sätt
+            Console.WriteLine(string.Join(',', firstOne));
+            Console.WriteLine(string.Join(',', firstOne.Reverse()));
+
 
         }
     }
